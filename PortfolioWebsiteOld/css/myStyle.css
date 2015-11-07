@@ -1,0 +1,390 @@
+/******************************************************************
+							Body
+*******************************************************************/
+body, html {
+	height: 100%;
+	width:	100%;
+}
+body{
+	background-image: url("../images/background/blizzard_@2X.png");
+}
+
+/******************************************************************
+								Navbar
+*******************************************************************/
+.navbar {
+	border-radius: 0px;
+	background-image: url("../images/background/noisy_net_@2X.png");
+	border-color: #919191;
+	border-top: none;
+	
+}
+.navbar-nav {
+	padding: 12px 0;
+}
+
+.navbar .navbar-nav > li > a {
+	color: #CCCCCC;
+	font-size: 15px;
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+    background-color: #AC2832;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #AC2832;
+}
+
+/*******************************
+	Dropdown Menu style
+********************************/
+.navbar-default .dropdown-menu {
+    background-image: url("../images/background/noisy_net_@2X.png");
+}
+
+.navbar-default .navbar-nav > .open > .dropdown-menu  > li > a{
+    color: #CCCCCC;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:active,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #FFFFFF;
+    background-color: #AC2832;
+}
+
+.navbar-default .navbar-nav > .open > .dropdown-menu li > a:hover{
+    color:#FFFFFF;
+    background-color: #AC2832;
+}
+
+/*******************************
+	Navbar toggle style
+********************************/
+.navbar-default .navbar-toggle {
+  border-color: #919191;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #AC2832;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+/************************************************************************
+							Index Page
+*************************************************************************/
+#index_jumbotron_title {
+	margin-top: 100px;
+	color: #191919;
+	background:transparent;
+	
+}
+
+.main_button {
+	position:relative;
+	border-radius: 0px;
+	background-color: #AC2832;
+	color: #FFFFFF;
+}
+
+.main_button:hover,
+.main_button:focus,
+.main_button:active {
+	background-color: #AC2832;
+	color: #FFFFFF;
+}
+
+.main_button:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height:2px;
+	bottom: 0;
+	left: 0;
+	background-color: #00B2B2;
+	visibility: hidden;
+	-moz-transform: scaleX(0); /*Mozilla*/
+	-webkit-transform: scaleX(0); /*Chrome*/
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+	
+}
+
+.main_button:hover:before {
+	visibility: visible;
+	-moz-transform: scaleX(1); /*Mozilla*/
+	-webkit-transform: scaleX(1); /*Chrome*/
+	transform: scaleX(1);
+}
+
+
+
+/************************************************************************
+							Main Courses Page
+*************************************************************************/
+#main_courses_jumbotron_title {
+	background:transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+}
+
+.course_list_row {
+	display: flex;
+	color: #FFFFFF;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: none none solid none;
+}
+
+.indiv_course_div {
+	flex: 1;
+	margin: 10px;
+    background-color: #B01030;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
+    box-shadow: 10px 10px 5px #888888;
+
+}
+.indiv_course_div * {
+	clear: both;
+}
+
+.course_description > a {
+	color: #4DD2FF;
+}
+.course_description > a:hover ,
+.course_description > a:active {
+	color: #DBF6FF;
+}
+
+/*******************************
+		Course Ribbon Title
+********************************/
+.course_number_ribbon {
+	position: relative;
+	background: #E34062;
+	margin: 10px 0 10px;
+	margin-left: -26px;
+	padding: 5px 10px;
+	float: left;
+	border: 1px solid rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Mozilla*/
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Chrome*/
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+
+}
+.course_number {
+	margin: 0 12px;
+}
+
+.course_number_ribbon::before {
+	display:block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	content: "";
+	border-bottom: 15px solid transparent;
+	border-right: 11px solid #A42E46;
+}
+/******************************************************************
+							Courses Page
+*******************************************************************/
+#courses_jumbotron_title {
+	background: transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+	
+}
+
+.description_title,
+.experience_gained_title,
+.textbooks_title,
+.programming_assignments_title {
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: solid;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
+	box-shadow: 10px 10px 5px #888888;
+    background-color: #CC3C59;
+}
+.courses_header {
+	border-color: #919191;
+	border-width: 1px;
+	border-style: none none solid none;
+}
+
+.assignments_row {
+	margin-bottom: 20px;
+}
+
+/******************************************************************
+					Main Projects Page
+*******************************************************************/
+.projects_jumbotron_title {
+	background:transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+}
+
+.projects_jumbotron_title * {
+	text-align: center;
+}
+
+.projects_row {
+	display: flex;
+	color: #FFF;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: none none solid none;
+}
+
+.indiv_projects_div {
+	position: relative;
+	flex: 1;
+	margin: 0 20px;
+    background-color: #2E8B57;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*chrome*/
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+.indiv_projects_div * {
+	clear: both;
+}
+
+.project_description > a {
+	color: #4DD2FF;
+}
+.project_description > a:hover ,
+.project_description > a:active {
+	color: #DBF6FF;
+}
+/*******************************
+		Project Ribbon Title
+********************************/
+.project_title_ribbon {
+	text-align: center;
+	position: relative;
+	margin: 10px -15px;
+	background: #00C87B;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Mozilla*/
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2); /*Chrome*/
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.project_title_ribbon:before {
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: -12px;
+	left: 0;
+	content: "";
+	border-bottom: 12px solid transparent;
+	border-right: 16px solid #33735A;
+	
+}
+
+.project_title_ribbon:after {
+	display:block;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	bottom: -12px;
+	right: 0;
+	content: "";
+	border-bottom: 12px solid transparent;
+	border-left: 16px solid #33735A;
+}
+/******************************************************************
+					Projects Page
+*******************************************************************/
+.background_title,
+.demo_video_title,
+.screen_shots_title,
+.gameplay_title,
+.files_title {
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: solid;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
+	box-shadow: 10px 10px 5px #888888;
+    background-color: #00C87B;
+}
+
+.projects_video > iframe {
+	align: middle;
+}
+/******************************************************************
+					About Me Page
+*******************************************************************/
+.aboutme_jumbotron_title {
+	background:transparent;
+	padding: 100px;
+	margin-bottom: -100px;
+	color: #191919;
+}
+.aboutme_jumbotron_title * {
+	text-align: center;
+}
+
+.aboutme_description {
+	
+	font-size: 20px;
+	color: #191919;
+}
+.aboutme_title {
+	color: #E6E6E6;
+	text-align: center;
+}
+.aboutme_education, 
+.aboutme_courses, 
+.aboutme_tech_summary {
+	margin: auto;
+	border-color: #919191;
+	border-width: 1px;
+	border-style: solid;
+	-moz-box-shadow: 10px 10px 5px #888888; /*Mozilla*/
+	-webkit-box-shadow: 10px 10px 5px #888888; /*Chrome*/
+	box-shadow: 10px 10px 5px #888888;
+    background-color: #5077BE;
+}
+
+.aboutme_education_row{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.aboutme_courses_row, 
+.aboutme_graph_row, 
+.aboutme_othertech_row  {
+	margin-top: 25px;
+}
+
+#graph {
+  width: 100%;
+  height: auto;
+}
